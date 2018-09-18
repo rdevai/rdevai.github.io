@@ -176,7 +176,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    /*font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;*/
+    /*font-family: {{ site.data.template.font.secondary }};*/
+    font-family: 'Courgette', cursive;
     color: #{{ site.data.template.color.primary }};
 }
 
@@ -352,6 +354,9 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+}
+section#services .first-row-services {
+  margin: 30px 0;
 }
 
 #portfolio .portfolio-item {
@@ -661,10 +666,12 @@ section#contact {
     background-image: url('{{ site.baseurl }}/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 section#contact .section-heading {
     color: #fff;
+    margin-bottom: 30px;
 }
 
 section#contact .form-group {
